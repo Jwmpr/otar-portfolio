@@ -27,30 +27,29 @@ const About = () => {
       <div className="container">
         <div className="about-content">
           <div className={`about-text ${isVisible ? 'visible' : ''}`}>
-            <h2 className="section-title">About <span className="gradient-text">Nexter</span></h2>
+            <h2 className="section-title">About <span className="gradient-text">Me</span></h2>
             <p className="about-description">
-              We're a team of passionate innovators dedicated to pushing the boundaries of what's possible 
-              in the digital realm. Founded in 2024, Nexter has quickly become a leader in creating 
-              next-generation digital experiences.
+              I'm a passionate developer with a love for creating digital experiences that matter. 
+              With expertise in modern web technologies, I enjoy turning complex problems into 
+              simple, beautiful, and intuitive solutions.
             </p>
             <p className="about-description">
-              Our mission is simple: to empower businesses and individuals with cutting-edge technology 
-              that's both powerful and accessible. We believe that great design and robust functionality 
-              should go hand in hand.
+              When I'm not coding, you can find me exploring new technologies, contributing to 
+              open-source projects, or sharing knowledge with the developer community.
             </p>
             
             <div className="stats-grid">
               <div className="stat-item">
-                <div className="stat-number">10K+</div>
-                <div className="stat-label">Happy Users</div>
+                <div className="stat-number">3+</div>
+                <div className="stat-label">Years Experience</div>
               </div>
               <div className="stat-item">
-                <div className="stat-number">99.9%</div>
-                <div className="stat-label">Uptime</div>
+                <div className="stat-number">50+</div>
+                <div className="stat-label">Projects Completed</div>
               </div>
               <div className="stat-item">
-                <div className="stat-number">24/7</div>
-                <div className="stat-label">Support</div>
+                <div className="stat-number">100%</div>
+                <div className="stat-label">Client Satisfaction</div>
               </div>
             </div>
           </div>
@@ -59,20 +58,20 @@ const About = () => {
             <div className="visual-container">
               <div className="floating-card card-1">
                 <div className="card-content">
-                  <div className="card-icon">💡</div>
-                  <div className="card-text">Innovation</div>
+                  <div className="card-icon">💻</div>
+                  <div className="card-text">Clean Code</div>
                 </div>
               </div>
               <div className="floating-card card-2">
                 <div className="card-content">
-                  <div className="card-icon">🎯</div>
-                  <div className="card-text">Precision</div>
+                  <div className="card-icon">🎨</div>
+                  <div className="card-text">UI/UX Design</div>
                 </div>
               </div>
               <div className="floating-card card-3">
                 <div className="card-content">
-                  <div className="card-icon">⚡</div>
-                  <div className="card-text">Speed</div>
+                  <div className="card-icon">🚀</div>
+                  <div className="card-text">Performance</div>
                 </div>
               </div>
             </div>

@@ -27,18 +27,19 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <h2 className="gradient-text">Nexter</h2>
+            <h2 className="gradient-text">Portfolio</h2>
           </div>
           
           <nav className={`nav ${isMobileMenuOpen ? 'nav-open' : ''}`}>
             <a href="#home" onClick={() => scrollToSection('home')}>Home</a>
-            <a href="#features" onClick={() => scrollToSection('features')}>Features</a>
             <a href="#about" onClick={() => scrollToSection('about')}>About</a>
+            <a href="#skills" onClick={() => scrollToSection('skills')}>Skills</a>
+            <a href="#projects" onClick={() => scrollToSection('projects')}>Projects</a>
             <a href="#contact" onClick={() => scrollToSection('contact')}>Contact</a>
           </nav>
 
           <button 
-            className="mobile-menu-btn"
+            className={`mobile-menu-btn ${isMobileMenuOpen ? 'active' : ''}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <span></span>

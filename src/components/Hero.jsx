@@ -8,6 +8,20 @@ const Hero = () => {
     setIsVisible(true);
   }, []);
 
+  const scrollToProjects = () => {
+    const element = document.getElementById('projects');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="hero">
       <div className="hero-background">
@@ -17,15 +31,19 @@ const Hero = () => {
       <div className="container">
         <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
           <h1 className="hero-title">
-            Welcome to the <span className="gradient-text">Next</span> Era
+            Hi, I'm <span className="gradient-text">Your Name</span>
           </h1>
           <p className="hero-subtitle">
-            Experience innovation like never before. We're building the future of digital experiences 
-            with cutting-edge technology and thoughtful design.
+            Full-Stack Developer & Creative Problem Solver. I build beautiful, 
+            functional web applications that make a difference.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-primary">Get Started</button>
-            <button className="btn btn-secondary">Learn More</button>
+            <button className="btn btn-primary" onClick={scrollToProjects}>
+              View My Work
+            </button>
+            <button className="btn btn-secondary" onClick={scrollToContact}>
+              Get In Touch
+            </button>
           </div>
         </div>
       </div>

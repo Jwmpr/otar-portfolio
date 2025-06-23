@@ -37,10 +37,10 @@ const Contact = () => {
       <div className="container">
         <div className="contact-content">
           <div className="contact-info">
-            <h2 className="section-title">Get in <span className="gradient-text">Touch</span></h2>
+            <h2 className="section-title">Let's Work <span className="gradient-text">Together</span></h2>
             <p className="contact-description">
-              Ready to start your next project? We'd love to hear from you. 
-              Send us a message and we'll respond as soon as possible.
+              I'm always interested in new opportunities and exciting projects. 
+              Whether you have a question or just want to say hi, feel free to reach out!
             </p>
             
             <div className="contact-details">
@@ -48,7 +48,7 @@ const Contact = () => {
                 <div className="contact-icon">📧</div>
                 <div className="contact-text">
                   <h4>Email</h4>
-                  <p>hello@nexter.tk</p>
+                  <p>your.email@example.com</p>
                 </div>
               </div>
               
@@ -64,7 +64,7 @@ const Contact = () => {
                 <div className="contact-icon">📍</div>
                 <div className="contact-text">
                   <h4>Location</h4>
-                  <p>San Francisco, CA</p>
+                  <p>Your City, Country</p>
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@ const Contact = () => {
               
               {isSubmitted && (
                 <div className="success-message">
-                  ✅ Message sent successfully! We'll get back to you soon.
+                  ✅ Message sent successfully! I'll get back to you soon.
                 </div>
               )}
             </form>
