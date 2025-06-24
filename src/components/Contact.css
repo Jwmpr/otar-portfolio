@@ -1,6 +1,10 @@
 .contact {
   background: linear-gradient(135deg, #1a1a1a 0%, #0c0c0c 100%);
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .contact::before {
@@ -77,6 +81,16 @@
 .contact-text p {
   margin: 0;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-text a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-text a:hover {
+  color: #667eea;
 }
 
 .contact-form-container {

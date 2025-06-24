@@ -23,11 +23,11 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="about" ref={aboutRef}>
+    <section className="about page-section" ref={aboutRef}>
       <div className="container">
         <div className="about-content">
           <div className={`about-text ${isVisible ? 'visible' : ''}`}>
-            <h2 className="section-title">About <span className="gradient-text">Me</span></h2>
+            <h2 className="section-title">About <span className="gradient-text">! ÕtÀR</span></h2>
             <p className="about-description">
               I'm a passionate developer with a love for creating digital experiences that matter. 
               With expertise in modern web technologies, I enjoy turning complex problems into 
@@ -35,7 +35,8 @@ const About = () => {
             </p>
             <p className="about-description">
               When I'm not coding, you can find me exploring new technologies, contributing to 
-              open-source projects, or sharing knowledge with the developer community.
+              open-source projects, or sharing knowledge with the developer community. I believe 
+              in writing clean, maintainable code and creating applications that users love.
             </p>
             
             <div className="stats-grid">

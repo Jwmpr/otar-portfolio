@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact">
+    <section className="contact page-section">
       <div className="container">
         <div className="contact-content">
           <div className="contact-info">
@@ -48,15 +48,17 @@ const Contact = () => {
                 <div className="contact-icon">📧</div>
                 <div className="contact-text">
                   <h4>Email</h4>
-                  <p>your.email@example.com</p>
+                  <a href="mailto:alman2506@hotmail.com">alman2506@hotmail.com</a>
                 </div>
               </div>
               
               <div className="contact-item">
-                <div className="contact-icon">📱</div>
+                <div className="contact-icon">💬</div>
                 <div className="contact-text">
-                  <h4>Phone</h4>
-                  <p>+1 (555) 123-4567</p>
+                  <h4>Discord</h4>
+                  <a href="https://discord.gg/jds2zmjc" target="_blank" rel="noopener noreferrer">
+                    Join my Discord Server
+                  </a>
                 </div>
               </div>
               
@@ -64,7 +66,7 @@ const Contact = () => {
                 <div className="contact-icon">📍</div>
                 <div className="contact-text">
                   <h4>Location</h4>
-                  <p>Your City, Country</p>
+                  <p>Available Worldwide</p>
                 </div>
               </div>
             </div>

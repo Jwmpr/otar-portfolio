@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
@@ -7,20 +8,6 @@ const Hero = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  const scrollToProjects = () => {
-    const element = document.getElementById('projects');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <section id="home" className="hero">
@@ -31,19 +18,19 @@ const Hero = () => {
       <div className="container">
         <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
           <h1 className="hero-title">
-            Hi, I'm <span className="gradient-text">Your Name</span>
+            Hi, I'm <span className="gradient-text">! ÕtÀR</span>
           </h1>
           <p className="hero-subtitle">
             Full-Stack Developer & Creative Problem Solver. I build beautiful, 
             functional web applications that make a difference.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-primary" onClick={scrollToProjects}>
+            <Link to="/projects" className="btn btn-primary">
               View My Work
-            </button>
-            <button className="btn btn-secondary" onClick={scrollToContact}>
+            </Link>
+            <Link to="/contact" className="btn btn-secondary">
               Get In Touch
-            </button>
+            </Link>
           </div>
         </div>
       </div>

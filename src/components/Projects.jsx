@@ -8,33 +8,46 @@ const Projects = () => {
   const projects = [
     {
       title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.',
+      description: 'A comprehensive online shopping platform with user authentication, product catalog, shopping cart, payment integration, and admin dashboard. Built with modern technologies for optimal performance.',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Express'],
+      category: 'Full-Stack',
       liveUrl: '#',
       githubUrl: '#'
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+      title: 'Social Media Dashboard',
+      description: 'A comprehensive social media management tool that allows users to schedule posts, track analytics, manage multiple accounts, and engage with their audience across different platforms.',
+      image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600',
+      technologies: ['React', 'TypeScript', 'Firebase', 'Chart.js', 'Material-UI'],
+      category: 'Frontend',
+      liveUrl: '#',
+      githubUrl: '#'
+    },
+    {
+      title: 'Task Management API',
+      description: 'A robust RESTful API for task management with user authentication, role-based permissions, real-time notifications, and comprehensive documentation. Includes automated testing and deployment.',
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'Firebase', 'Material-UI', 'Socket.io'],
+      technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT', 'Docker'],
+      category: 'Backend',
       liveUrl: '#',
       githubUrl: '#'
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application that provides current weather conditions and forecasts with beautiful data visualizations.',
+      title: 'Real-Time Chat Application',
+      description: 'A modern chat application with real-time messaging, file sharing, group chats, emoji support, and message encryption. Features responsive design and offline message sync.',
+      image: 'https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=600',
+      technologies: ['React', 'Socket.io', 'Node.js', 'MongoDB', 'Redis'],
+      category: 'Real-Time',
+      liveUrl: '#',
+      githubUrl: '#'
+    },
+    {
+      title: 'Weather Analytics Dashboard',
+      description: 'An interactive weather dashboard with detailed forecasts, historical data analysis, customizable alerts, and beautiful data visualizations. Integrates multiple weather APIs for accuracy.',
       image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['JavaScript', 'Chart.js', 'OpenWeather API', 'CSS3'],
-      liveUrl: '#',
-      githubUrl: '#'
-    },
-    {
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website showcasing projects and skills with smooth animations and interactive elements.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
-      technologies: ['React', 'CSS3', 'Framer Motion', 'Netlify'],
+      technologies: ['Vue.js', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL'],
+      category: 'Data Visualization',
       liveUrl: '#',
       githubUrl: '#'
     }
@@ -60,12 +73,12 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="projects">
+    <section className="projects page-section">
       <div className="container">
         <div className="projects-header">
           <h2 className="section-title">My <span className="gradient-text">Projects</span></h2>
           <p className="section-subtitle">
-            A showcase of my recent work and personal projects
+            A showcase of my recent work across different categories and technologies
           </p>
         </div>
         
@@ -91,6 +104,7 @@ const Projects = () => {
                 </div>
               </div>
               <div className="project-content">
+                <div className="project-category">{project.category}</div>
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
                 <div className="project-technologies">

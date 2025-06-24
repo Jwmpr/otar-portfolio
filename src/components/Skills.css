@@ -1,6 +1,10 @@
 .skills {
   background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
 }
 
 .skills::before {

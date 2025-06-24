@@ -58,7 +58,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className="skills">
+    <section className="skills page-section">
       <div className="container">
         <div className="skills-header">
           <h2 className="section-title">My <span className="gradient-text">Skills</span></h2>
