@@ -21,10 +21,10 @@ const Footer = () => {
               <a href="https://discord.gg/jds2zmjc" className="social-link" aria-label="Discord" target="_blank" rel="noopener noreferrer">
                 <span>💬</span>
               </a>
-              <a href="#" className="social-link" aria-label="GitHub">
+              <a href="https://github.com" className="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                 <span>🐙</span>
               </a>
-              <a href="#" className="social-link" aria-label="LinkedIn">
+              <a href="https://linkedin.com" className="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                 <span>💼</span>
               </a>
             </div>
@@ -44,10 +44,10 @@ const Footer = () => {
             <div className="footer-column">
               <h4 className="footer-title">Services</h4>
               <ul className="footer-list">
-                <li><a href="#web-development">Web Development</a></li>
-                <li><a href="#ui-design">UI/UX Design</a></li>
-                <li><a href="#consulting">Consulting</a></li>
-                <li><a href="#maintenance">Maintenance</a></li>
+                <li><button type="button" className="footer-button">Web Development</button></li>
+                <li><button type="button" className="footer-button">UI/UX Design</button></li>
+                <li><button type="button" className="footer-button">Consulting</button></li>
+                <li><button type="button" className="footer-button">Maintenance</button></li>
               </ul>
             </div>
             
@@ -55,9 +55,9 @@ const Footer = () => {
               <h4 className="footer-title">Connect</h4>
               <ul className="footer-list">
                 <li><Link to="/contact">Contact</Link></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
+                <li><button type="button" className="footer-button">Resume</button></li>
+                <li><button type="button" className="footer-button">Blog</button></li>
+                <li><button type="button" className="footer-button">Newsletter</button></li>
               </ul>
             </div>
           </div>
@@ -68,8 +68,8 @@ const Footer = () => {
             <p>&copy; {currentYear} ! ÕtÀR. All rights reserved.</p>
           </div>
           <div className="footer-legal">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
+            <button type="button" className="footer-button">Privacy Policy</button>
+            <button type="button" className="footer-button">Terms of Service</button>
           </div>
         </div>
       </div>
